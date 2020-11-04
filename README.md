@@ -16,7 +16,15 @@ docker pull bayramalex/hello
 
 ```
 
-Alternatively you can build the image via Dockerfile and assign it  to an arbitrary name such as hello :
+Alternatively you can build the image via Dockerfile and assign it  to an arbitrary name such as hello. Firstly you need to get the corresponding Dockerfile via
+
+```
+git clone https://github.com/comorment/gwas.git
+
+```
+
+and cd to this directory where the Dockerfile is placed. Then you can build this Dockerfile as:
+
 
 ```
 docker build -t  hello .
@@ -65,7 +73,7 @@ singularity build hello.sif docker://bayramalex/imagehello
 Then on your working directory, you can observe hello.sif container
 
 
-Alternatively you can build it with the Dockerfile on your local. Once you cd to the directory where your docker file is, then type
+Alternatively you can build it with the Dockerfile on your local. Once you cd to the directory where your Dockerfile is, then type
 
 ```
 bash singularity/build_from_dockerfile.sh
